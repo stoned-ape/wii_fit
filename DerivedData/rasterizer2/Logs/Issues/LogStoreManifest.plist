@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>8BA287BA-BC73-4D97-9301-F51370DDD697</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>8BA287BA-BC73-4D97-9301-F51370DDD697.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>rasterizer2-etoropazlpolkgdorrzdwfdnsoyg</string>
+			<key>timeStartedRecording</key>
+			<real>685991890.56137002</real>
+			<key>timeStoppedRecording</key>
+			<real>685991892.00279999</real>
+			<key>title</key>
+			<string>Build target rasterizer2</string>
+			<key>uniqueIdentifier</key>
+			<string>8BA287BA-BC73-4D97-9301-F51370DDD697</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>

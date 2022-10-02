@@ -1,0 +1,56 @@
+// -*- Metal -*-
+//===-- metal_stdlib ------------------------------------------------------===//
+// Copyright (c) 2014-2022 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_STDLIB
+#define __METAL_STDLIB
+
+#define device
+#define constant
+#define thread 
+#define thread_group
+#define threadgroup 
+#define METAL_INTERNAL
+#define METAL_FUNC
+#define METAL_DEPRECATED()
+#define __METAL_MEMORY_FLAGS_NONE__ 0
+#define __METAL_MEMORY_FLAGS_DEVICE__ 1
+#define __METAL_MEMORY_FLAGS_THREADGROUP__ 2
+#define __METAL_MEMORY_FLAGS_THREADGROUP_IMAGEBLOCK__ 3
+#define __METAL_MEMORY_FLAGS_TEXTURE__ 4
+#define __METAL_MEMORY_SCOPE_THREADGROUP__ 0
+#define __METAL_FAST_MATH__ 0
+
+typedef unsigned int uint;
+
+// #include <metal_array>
+// #include <metal_atomic>
+// #include <metal_command_buffer>
+// #include <metal_common>
+// #include <metal_compute>
+// #include <metal_functional>
+// #include <metal_geometric>
+// #include <metal_graphics>
+// #include <metal_imageblocks>
+// #include <metal_initializer_list>
+// #include <metal_integer>
+// #include <metal_interpolate>
+// #include <metal_limits>
+// #include <metal_math>
+#include <metal_matrix>
+// #include <metal_numeric>
+// #include <metal_pack>
+// #include <metal_pixel>
+// #include <metal_quadgroup>
+// #include <metal_raytracing>
+// #include <metal_relational>
+// #include <metal_simdgroup>
+// #include <metal_simdgroup_matrix>
+// #include <metal_texture>
+// #include <metal_uniform>
+// #include <metal_utility>
+// #include <metal_visible_function_table>
+
+
+#endif // __METAL_STDLIB

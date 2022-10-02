@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+rasterizer2 in rasterizer2, no dependencies

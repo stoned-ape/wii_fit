@@ -1,0 +1,195 @@
+In file included from main.mm:2:
+In file included from ./render_pipeline.h:12:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLTypes.h:8:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:91:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLError.h:15:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:127:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h:26:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:375:62: error: unknown type name 'ExceptionInformation'; did you mean 'MemoryExceptionInformation'?
+typedef CALLBACK_API_C( OSStatus , ExceptionHandlerProcPtr )(ExceptionInformation * theException);
+                                                             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:139:43: note: 'MemoryExceptionInformation' declared here
+typedef struct MemoryExceptionInformation MemoryExceptionInformation;
+                                          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:409:9: error: unknown type name 'ExceptionInformation'
+                                                  ExceptionInformation *  theException,
+                                                  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:416:91: error: unknown type name 'ExceptionInformation'
+    inline OSStatus                                             InvokeExceptionHandlerUPP(ExceptionInformation * theException, ExceptionHandlerUPP userUPP) { return (*userUPP)(theException); }
+                                                                                          ^
+In file included from main.mm:2:
+In file included from ./render_pipeline.h:12:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLTypes.h:8:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:91:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLError.h:15:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:159:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:88:2: error: unsupported CPU
+#error unsupported CPU
+ ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:465:18: error: conflicting types for 'scalb'
+extern double_t  scalb(double_t x, _scalb_n_type n);
+                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:684:15: note: previous declaration is here
+extern double scalb(double, double); 
+              ^
+In file included from main.mm:2:
+In file included from ./render_pipeline.h:12:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLTypes.h:8:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:91:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLError.h:15:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:159:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:871:14: error: functions that differ only in their return type cannot be overloaded
+extern long  __fpclassifyd(double x);
+       ~~~~  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:132:12: note: previous declaration is here
+extern int __fpclassifyd(double);
+       ~~~ ^
+In file included from main.mm:2:
+In file included from ./render_pipeline.h:12:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLTypes.h:8:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:91:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLError.h:15:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:159:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:882:14: error: functions that differ only in their return type cannot be overloaded
+extern long  __fpclassifyf(float x);
+       ~~~~  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:131:12: note: previous declaration is here
+extern int __fpclassifyf(float);
+       ~~~ ^
+In file included from main.mm:2:
+In file included from ./render_pipeline.h:12:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLTypes.h:8:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:91:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLError.h:15:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:159:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1322:46: error: use of undeclared identifier 'SIGDIGLEN'
+        unsigned char                   text[SIGDIGLEN];        /* significant digits */
+                                             ^
+In file included from main.mm:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MTKModel.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLAsset.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLObject.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLTypes.h:13:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/simd.h:17:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/vector.h:47:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/math.h:1687:61: error: expected unqualified-id
+static SIMD_CPPFUNC float __tg_isfinite(float x) { return ::isfinite(x); }
+                                                            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1105:31: note: expanded from macro 'isfinite'
+#define      isfinite(x)      ( ( sizeof ( x ) == sizeof(double) ) ?           \
+                              ^
+In file included from main.mm:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MTKModel.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLAsset.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLObject.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLTypes.h:13:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/simd.h:17:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/vector.h:47:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/math.h:1690:63: error: expected unqualified-id
+static SIMD_CPPFUNC double __tg_isfinite(double x) { return ::isfinite(x); }
+                                                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1105:31: note: expanded from macro 'isfinite'
+#define      isfinite(x)      ( ( sizeof ( x ) == sizeof(double) ) ?           \
+                              ^
+In file included from main.mm:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MTKModel.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLAsset.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLObject.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLTypes.h:13:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/simd.h:17:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/vector.h:47:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/math.h:1701:61: error: expected unqualified-id
+static SIMD_CPPFUNC float __tg_isnormal(float x) { return ::isnormal(x); }
+                                                            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1100:31: note: expanded from macro 'isnormal'
+#define      isnormal(x)      ( ( sizeof ( x ) == sizeof(double) ) ?           \
+                              ^
+In file included from main.mm:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MTKModel.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLAsset.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLObject.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLTypes.h:13:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/simd.h:17:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/vector.h:47:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/math.h:1704:63: error: expected unqualified-id
+static SIMD_CPPFUNC double __tg_isnormal(double x) { return ::isnormal(x); }
+                                                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1100:31: note: expanded from macro 'isnormal'
+#define      isnormal(x)      ( ( sizeof ( x ) == sizeof(double) ) ?           \
+                              ^
+In file included from main.mm:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MTKModel.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLAsset.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLObject.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLTypes.h:13:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/simd.h:17:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/vector.h:47:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/math.h:1945:3: error: expected unqualified-id
+  isfinite(fptypeN x) { return ::__tg_isfinite(x); }
+  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1105:35: note: expanded from macro 'isfinite'
+#define      isfinite(x)      ( ( sizeof ( x ) == sizeof(double) ) ?           \
+                                  ^
+In file included from main.mm:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MTKModel.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLAsset.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLObject.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLTypes.h:13:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/simd.h:17:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/vector.h:47:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/math.h:1945:3: error: expected ')'
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1105:35: note: expanded from macro 'isfinite'
+#define      isfinite(x)      ( ( sizeof ( x ) == sizeof(double) ) ?           \
+                                  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/math.h:1945:3: note: to match this '('
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1105:33: note: expanded from macro 'isfinite'
+#define      isfinite(x)      ( ( sizeof ( x ) == sizeof(double) ) ?           \
+                                ^
+In file included from main.mm:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MTKModel.h:11:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLAsset.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLObject.h:9:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ModelIO.framework/Headers/MDLTypes.h:13:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/simd.h:17:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/vector.h:47:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/math.h:1945:3: error: expected ')'
+  isfinite(fptypeN x) { return ::__tg_isfinite(x); }
+  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1105:68: note: expanded from macro 'isfinite'
+#define      isfinite(x)      ( ( sizeof ( x ) == sizeof(double) ) ?           \
+                                                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/simd/math.h:1945:3: note: to match this '('
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1105:31: note: expanded from macro 'isfinite'
+#define      isfinite(x)      ( ( sizeof ( x ) == sizeof(double) ) ?           \
+                              ^
+15 errors generated.
+make: *** [rasterizer2.app/Contents/MacOS/rasterizer2] Error 1

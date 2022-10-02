@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D57C9D628E0EADB0058CF8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D57C9D528E0EADB0058CF8C /* AVFoundation.framework */; };
+		4D57C9DC28E11A260058CF8C /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D57C9DB28E11A260058CF8C /* VideoToolbox.framework */; };
+		4D57C9DE28E12BE90058CF8C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D57C9DD28E12BE90058CF8C /* CoreMedia.framework */; };
+		4D90AD5F28DE6FE00015FBBF /* kinect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D90AD5D28DE6FE00015FBBF /* kinect.cpp */; };
+		4D90AD6128DE70A70015FBBF /* libfreenect2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D90AD6028DE70A70015FBBF /* libfreenect2.dylib */; };
+		4D90AD6228DE70A70015FBBF /* libfreenect2.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 4D90AD6028DE70A70015FBBF /* libfreenect2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4D90AD6528E0CED30015FBBF /* PoseNetMobileNet100S16FP16.mlkitmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D90AD6428E0CED30015FBBF /* PoseNetMobileNet100S16FP16.mlkitmodel */; };
+		4DBFAD4028CC983200D34C58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DBFAD3F28CC983200D34C58 /* Assets.xcassets */; };
+		4DBFAD4328CC983200D34C58 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DBFAD4128CC983200D34C58 /* MainMenu.xib */; };
+		4DBFAD5128CCA2A100D34C58 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DBFAD5028CCA2A100D34C58 /* main.mm */; };
+		4DBFAD5428CCA32200D34C58 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBFAD5328CCA32200D34C58 /* Cocoa.framework */; };
+		4DBFAD5628CCA50000D34C58 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBFAD5528CCA50000D34C58 /* Metal.framework */; };
+		4DBFAD5828CCA50B00D34C58 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBFAD5728CCA50B00D34C58 /* MetalKit.framework */; };
+		4DBFAD5A28CCA8F400D34C58 /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4DBFAD5928CCA8F400D34C58 /* shaders.metal */; };
+		4DBFAD5E28CD9D1200D34C58 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4DBFAD5D28CD9D1200D34C58 /* makefile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D90AD6328DE70A70015FBBF /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D90AD6228DE70A70015FBBF /* libfreenect2.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D57C9D528E0EADB0058CF8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4D57C9DB28E11A260058CF8C /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		4D57C9DD28E12BE90058CF8C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4D90AD5D28DE6FE00015FBBF /* kinect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = kinect.cpp; sourceTree = "<group>"; };
+		4D90AD5E28DE6FE00015FBBF /* kinect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kinect.hpp; sourceTree = "<group>"; };
+		4D90AD6028DE70A70015FBBF /* libfreenect2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreenect2.dylib; path = libfreenect2/libfreenect2.dylib; sourceTree = "<group>"; };
+		4D90AD6428E0CED30015FBBF /* PoseNetMobileNet100S16FP16.mlkitmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PoseNetMobileNet100S16FP16.mlkitmodel; sourceTree = "<group>"; };
+		4DBFAD3928CC983100D34C58 /* rasterizer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rasterizer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DBFAD3F28CC983200D34C58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DBFAD4228CC983200D34C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4DBFAD4628CC983200D34C58 /* whats_xib.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = whats_xib.entitlements; sourceTree = "<group>"; };
+		4DBFAD5028CCA2A100D34C58 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		4DBFAD5328CCA32200D34C58 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4DBFAD5528CCA50000D34C58 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		4DBFAD5728CCA50B00D34C58 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		4DBFAD5928CCA8F400D34C58 /* shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		4DBFAD5B28CCA94100D34C58 /* render_pipeline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = render_pipeline.h; sourceTree = "<group>"; };
+		4DBFAD5D28CD9D1200D34C58 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DBFAD3628CC983100D34C58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DBFAD5828CCA50B00D34C58 /* MetalKit.framework in Frameworks */,
+				4D90AD6128DE70A70015FBBF /* libfreenect2.dylib in Frameworks */,
+				4D57C9DC28E11A260058CF8C /* VideoToolbox.framework in Frameworks */,
+				4D57C9D628E0EADB0058CF8C /* AVFoundation.framework in Frameworks */,
+				4DBFAD5628CCA50000D34C58 /* Metal.framework in Frameworks */,
+				4DBFAD5428CCA32200D34C58 /* Cocoa.framework in Frameworks */,
+				4D57C9DE28E12BE90058CF8C /* CoreMedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DBFAD3028CC983100D34C58 = {
+			isa = PBXGroup;
+			children = (
+				4DBFAD3B28CC983100D34C58 /* whats_xib */,
+				4DBFAD3A28CC983100D34C58 /* Products */,
+				4DBFAD5228CCA32200D34C58 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DBFAD3A28CC983100D34C58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DBFAD3928CC983100D34C58 /* rasterizer2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DBFAD3B28CC983100D34C58 /* whats_xib */ = {
+			isa = PBXGroup;
+			children = (
+				4D90AD6428E0CED30015FBBF /* PoseNetMobileNet100S16FP16.mlkitmodel */,
+				4DBFAD3F28CC983200D34C58 /* Assets.xcassets */,
+				4DBFAD4128CC983200D34C58 /* MainMenu.xib */,
+				4DBFAD4628CC983200D34C58 /* whats_xib.entitlements */,
+				4DBFAD5028CCA2A100D34C58 /* main.mm */,
+				4DBFAD5928CCA8F400D34C58 /* shaders.metal */,
+				4DBFAD5B28CCA94100D34C58 /* render_pipeline.h */,
+				4DBFAD5D28CD9D1200D34C58 /* makefile */,
+				4D90AD5D28DE6FE00015FBBF /* kinect.cpp */,
+				4D90AD5E28DE6FE00015FBBF /* kinect.hpp */,
+			);
+			path = whats_xib;
+			sourceTree = "<group>";
+		};
+		4DBFAD5228CCA32200D34C58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D57C9DD28E12BE90058CF8C /* CoreMedia.framework */,
+				4D57C9DB28E11A260058CF8C /* VideoToolbox.framework */,
+				4D57C9D528E0EADB0058CF8C /* AVFoundation.framework */,
+				4D90AD6028DE70A70015FBBF /* libfreenect2.dylib */,
+				4DBFAD5728CCA50B00D34C58 /* MetalKit.framework */,
+				4DBFAD5528CCA50000D34C58 /* Metal.framework */,
+				4DBFAD5328CCA32200D34C58 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DBFAD3828CC983100D34C58 /* rasterizer2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DBFAD4928CC983200D34C58 /* Build configuration list for PBXNativeTarget "rasterizer2" */;
+			buildPhases = (
+				4DBFAD3528CC983100D34C58 /* Sources */,
+				4DBFAD3628CC983100D34C58 /* Frameworks */,
+				4DBFAD3728CC983100D34C58 /* Resources */,
+				4D90AD6328DE70A70015FBBF /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rasterizer2;
+			productName = whats_xib;
+			productReference = 4DBFAD3928CC983100D34C58 /* rasterizer2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DBFAD3128CC983100D34C58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					4DBFAD3828CC983100D34C58 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 4DBFAD3428CC983100D34C58 /* Build configuration list for PBXProject "rasterizer2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DBFAD3028CC983100D34C58;
+			productRefGroup = 4DBFAD3A28CC983100D34C58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DBFAD3828CC983100D34C58 /* rasterizer2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DBFAD3728CC983100D34C58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DBFAD4028CC983200D34C58 /* Assets.xcassets in Resources */,
+				4DBFAD4328CC983200D34C58 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DBFAD3528CC983100D34C58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DBFAD5A28CCA8F400D34C58 /* shaders.metal in Sources */,
+				4D90AD5F28DE6FE00015FBBF /* kinect.cpp in Sources */,
+				4DBFAD5128CCA2A100D34C58 /* main.mm in Sources */,
+				4DBFAD5E28CD9D1200D34C58 /* makefile in Sources */,
+				4D90AD6528E0CED30015FBBF /* PoseNetMobileNet100S16FP16.mlkitmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4DBFAD4128CC983200D34C58 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DBFAD4228CC983200D34C58 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DBFAD4728CC983200D34C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(PROJECT_DIR)/glm/include",
+					"$(PROJECT_DIR)/metal_stdlib_cpu",
+					"$(PROJECT_DIR)/libfreenect2",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				"MTL_COMPILER_FLAGS[sdk=*]" = "-O3";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4DBFAD4828CC983200D34C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(PROJECT_DIR)/glm/include",
+					"$(PROJECT_DIR)/metal_stdlib_cpu",
+					"$(PROJECT_DIR)/libfreenect2",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4DBFAD4A28CC983200D34C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = whats_xib/whats_xib.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "trust me bro";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libfreenect2",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stonedape.whats-xib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		4DBFAD4B28CC983200D34C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = whats_xib/whats_xib.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "trust me bro";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libfreenect2",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stonedape.whats-xib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DBFAD3428CC983100D34C58 /* Build configuration list for PBXProject "rasterizer2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DBFAD4728CC983200D34C58 /* Debug */,
+				4DBFAD4828CC983200D34C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DBFAD4928CC983200D34C58 /* Build configuration list for PBXNativeTarget "rasterizer2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DBFAD4A28CC983200D34C58 /* Debug */,
+				4DBFAD4B28CC983200D34C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DBFAD3128CC983100D34C58 /* Project object */;
+}
