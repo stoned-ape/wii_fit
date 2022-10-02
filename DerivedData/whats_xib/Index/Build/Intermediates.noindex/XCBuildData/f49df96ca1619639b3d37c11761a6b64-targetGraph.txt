@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-whats_xib in rasterizer2, no dependencies
